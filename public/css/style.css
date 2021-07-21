@@ -1,0 +1,77 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: #1AB996;
+  font-family: Helvetica, sans-serif; }
+
+h1 {
+  font-size: 20px; }
+
+header h1 {
+  padding-top: 40px;
+  color: #FFFDD8; }
+
+#board {
+  padding: 20px;
+  text-align: center; }
+
+#high-scores li {
+  margin-top: 5px; }
+
+.card {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  padding: 15px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer; }
+  .card img {
+    max-height: 100%; }
+  .card:not(.flipped) {
+    background: #FFFDD8; }
+
+#progress-bar {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 20px;
+  margin-bottom: 15px; }
+  #progress-bar::-webkit-progress-value {
+    background: #D83A37; }
+  #progress-bar[value]::-webkit-progress-bar {
+    border: 1px solid black;
+    background-color: #FFFDD8;
+    border-radius: 8px;
+    overflow: hidden; }
+
+.dialog-background {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(50px);
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.dialog-box {
+  width: 600px;
+  margin: 150px auto;
+  padding: 30px 20px;
+  border: 1px solid black;
+  background: #FFF; }
+  .dialog-box h1, .dialog-box p, .dialog-box ul {
+    padding-bottom: 15px; }
+
+#cheat-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px; }
