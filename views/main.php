@@ -73,7 +73,7 @@
                 <h1>Gagné, bravo !</h1>
                 <p>Score : <span id="score"></span></p>
 
-                <form action="http://localhost:3000/scores"
+                <form action="scores"
                       method="POST">
                     <input placeholder="Nom du joueur"
                            name="playerName"
