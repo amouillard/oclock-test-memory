@@ -22,15 +22,15 @@ Organisation du code
 --------------------
 index.php contient un petit routeur qui permet de rediriger les requêtes sur deux routes :
 
-+ GET / - l'index qui récupère les scores via le ScoreModel et les passe à la vue principale (views/main.php)
-+ POST /scores - permettant de stocker un nouveau high score et de relancer le jeu
++ **GET /** - l'index qui récupère les scores via le ScoreModel et les passe à la vue principale (views/main.php)
++ **POST /scores** - permettant de stocker un nouveau high score et de relancer le jeu
 
 La classe Database est une petite surcouche sur l'accès PDO et la création du fichier SQLite.
 
 Une classe abstraite Model permet d'aborder à la fois la notion d'héritage et d'interface pour créer
 le modèle ScoreModel qui gère sa table et ses données.
 
-L'intéraction client est gérée dans public/js/script.js, avec des options de configuration suivie du code
+L'intéraction client est gérée dans public/js/script.js, avec des options de configuration suivies du code
 gérant l'affichage des cartes, les évènements et les conditions de victoire / défaite.
 
 Explication des choix techniques
@@ -39,11 +39,19 @@ Explication des choix techniques
 + Front-end : jQuery
 + Back-end : PHP + SQLite
 
-J'ai volontairement évité les frameworks, outils de build et l'ES6 / CSS "moderne" (Grid / Flexbox / Responsive avec rem), 
-n'utilisant que jQuery pour simplifier la gestion des évènements et modification du DOM la syntaxe vanilla JS étant plus 
+J'ai volontairement évité les frameworks, outils de build et l'ES6 / CSS "moderne" (Grid / Flexbox / Responsive avec rem)
+pour ne pas surcharger mes pauvres étudiants fictifs de saison 4 étant à leur 6ème semaine de développement, considérant
+que la configuration de Webpack et la compréhension de React+Redux ne sont pas les priorités à ce moment :)
+
+J'ai seulement choisi jQuery pour simplifier la gestion des évènements et modification du DOM la syntaxe vanilla JS étant plus 
 verbeuse. L'objectif ici était de se concentrer sur une introduction à la POO avec un nano-framework 
 (il n'y a qu'un routeur et un accès DB via modèles !) qui permettrait de parler un peu de pattern MVC et
-persistance des données. PHP + SQLite me semblait être la meilleure combinaison pour une installation facile.
+persistance des données. 
+
+PHP + SQLite me semblait être la meilleure combinaison pour une installation facile.
+
+Le code est majoritairement orienté pour un navigateur Chrome, mais fonctionne aussi sous Firefox, Safari et Edge avec
+quelques effets visuels manquants.
 
 Installation
 -----
@@ -77,9 +85,6 @@ pour compiler le fichier .scss avec la commande suivante.
 ```sh
 node-sass -w style.scss public/css/style.css
 ```
-
-Le code est majoritairement orienté pour un navigateur Chrome, mais fonctionne aussi sous Firefox, Safari et Edge avec
-quelques effets visuels manquants.
 
 Test
 ----
