@@ -1,5 +1,5 @@
-$oclock-green:#1AB996;
-$oclock-yellow:#FFFDD8;
+$oclock-green:#0ac3a7;
+$oclock-yellow:#fffdd8;
 $oclock-red:#D83A37;
 $border-radius:8px;
 
@@ -10,8 +10,13 @@ $border-radius:8px;
   box-sizing: border-box;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   background: $oclock-green;
@@ -24,6 +29,10 @@ h1 {
 
 h2 {
   font-size: 26px;
+}
+
+p {
+  line-height: 1.5;
 }
 
 header {
@@ -47,8 +56,8 @@ header {
 
 .card {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   margin: 5px;
   padding: 15px;
   background: white;
@@ -58,6 +67,7 @@ header {
 
   img {
     max-height: 100%;
+    max-width: 100%;
   }
 
   &:not(.flipped) {
@@ -73,6 +83,7 @@ header {
 
   &::-webkit-progress-value {
     background: $oclock-red;
+    transition: all 0.5s linear;
   }
 
   &[value]::-webkit-progress-bar {
@@ -105,10 +116,15 @@ header {
   h2, p, ul {
     padding-bottom: 15px;
   }
+
+  button {
+    height: 30px;
+    width: 30%;
+  }
 }
 
 #cheat-button {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
 }

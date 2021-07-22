@@ -35,7 +35,7 @@
                  style="display: none;">
                 <h2>Jeu de mémoire</h2>
                 <p>Bienvenue !</p>
-                <p>Le but du jeu est de trouver toutes les paires dans le temps imparti.</p>
+                <p>Le but du jeu est de trouver toutes les paires dans le temps imparti. Connaissez-vous tous ces langages de programmation ? :)</p>
 <?php
                 if(count($scores)) {
 ?>
@@ -70,7 +70,7 @@
             <div id="win-dialog"
                  class="dialog-box"
                  style="display: none;">
-                <h2>Gagné, bravo !</h1>
+                <h2>Gagné, bravo !</h2>
                 <p>Score : <span id="score"></span></p>
 
                 <form action="scores"

@@ -3,11 +3,15 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 body {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  background: #1AB996;
+  background: #0ac3a7;
   font-family: Helvetica, sans-serif; }
 
 h1 {
@@ -16,10 +20,13 @@ h1 {
 h2 {
   font-size: 26px; }
 
+p {
+  line-height: 1.5; }
+
 header h1 {
   padding-top: 35px;
   padding-bottom: 10px;
-  color: #FFFDD8; }
+  color: #fffdd8; }
 
 #board {
   padding: 20px;
@@ -30,8 +37,8 @@ header h1 {
 
 .card {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   margin: 5px;
   padding: 15px;
   background: white;
@@ -39,9 +46,10 @@ header h1 {
   border-radius: 8px;
   cursor: pointer; }
   .card img {
-    max-height: 100%; }
+    max-height: 100%;
+    max-width: 100%; }
   .card:not(.flipped) {
-    background: #FFFDD8; }
+    background: #fffdd8; }
 
 #progress-bar {
   -webkit-appearance: none;
@@ -49,10 +57,11 @@ header h1 {
   height: 20px;
   margin-bottom: 15px; }
   #progress-bar::-webkit-progress-value {
-    background: #D83A37; }
+    background: #D83A37;
+    transition: all 0.5s linear; }
   #progress-bar[value]::-webkit-progress-bar {
     border: 1px solid black;
-    background-color: #FFFDD8;
+    background-color: #fffdd8;
     border-radius: 8px;
     overflow: hidden; }
 
@@ -75,8 +84,11 @@ header h1 {
   background: #FFF; }
   .dialog-box h2, .dialog-box p, .dialog-box ul {
     padding-bottom: 15px; }
+  .dialog-box button {
+    height: 30px;
+    width: 30%; }
 
 #cheat-button {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px; }
