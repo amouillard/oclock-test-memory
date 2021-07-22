@@ -33,7 +33,7 @@
             <div id="start-dialog"
                  class="dialog-box"
                  style="display: none;">
-                <h1>Jeu de mémoire</h1>
+                <h2>Jeu de mémoire</h2>
                 <p>Bienvenue !</p>
                 <p>Le but du jeu est de trouver toutes les paires dans le temps imparti.</p>
 <?php
@@ -62,7 +62,7 @@
             <div id="lose-dialog"
                  class="dialog-box"
                  style="display: none;">
-                <h1>Aïe, c'est perdu...</h1>
+                <h2>Aïe, c'est perdu...</h2>
                 <p>Paires trouvées : <span id="pairs-found"></span></p>
                 <button id="restart-button">Réessayer</button>
             </div>
@@ -70,7 +70,7 @@
             <div id="win-dialog"
                  class="dialog-box"
                  style="display: none;">
-                <h1>Gagné, bravo !</h1>
+                <h2>Gagné, bravo !</h1>
                 <p>Score : <span id="score"></span></p>
 
                 <form action="scores"

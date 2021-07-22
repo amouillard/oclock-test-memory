@@ -1,6 +1,7 @@
 $oclock-green:#1AB996;
 $oclock-yellow:#FFFDD8;
 $oclock-red:#D83A37;
+$border-radius:8px;
 
 // Bon article qui explique pourquoi utiliser ce snippet de box-sizing : https://css-tricks.com/box-sizing/
 *, *:before, *:after {
@@ -18,12 +19,17 @@ body {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 26px;
 }
 
 header {
   h1 {
-    padding-top: 40px;
+    padding-top: 35px;
+    padding-bottom: 10px;
     color: $oclock-yellow;
   }
 }
@@ -47,7 +53,7 @@ header {
   padding: 15px;
   background: white;
   border: 1px solid black;
-  border-radius: 8px;
+  border-radius: $border-radius;
   cursor: pointer;
 
   img {
@@ -72,7 +78,7 @@ header {
   &[value]::-webkit-progress-bar {
     border: 1px solid black;
     background-color: $oclock-yellow;
-    border-radius: 8px;
+    border-radius: $border-radius;
     overflow: hidden;
   }
 }
@@ -93,9 +99,10 @@ header {
   margin: 150px auto;
   padding: 30px 20px;
   border: 1px solid black;
+  border-radius: $border-radius;
   background: #FFF;
 
-  h1, p, ul {
+  h2, p, ul {
     padding-bottom: 15px;
   }
 }

@@ -11,10 +11,14 @@ body {
   font-family: Helvetica, sans-serif; }
 
 h1 {
-  font-size: 20px; }
+  font-size: 40px; }
+
+h2 {
+  font-size: 26px; }
 
 header h1 {
-  padding-top: 40px;
+  padding-top: 35px;
+  padding-bottom: 10px;
   color: #FFFDD8; }
 
 #board {
@@ -67,8 +71,9 @@ header h1 {
   margin: 150px auto;
   padding: 30px 20px;
   border: 1px solid black;
+  border-radius: 8px;
   background: #FFF; }
-  .dialog-box h1, .dialog-box p, .dialog-box ul {
+  .dialog-box h2, .dialog-box p, .dialog-box ul {
     padding-bottom: 15px; }
 
 #cheat-button {

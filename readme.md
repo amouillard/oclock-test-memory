@@ -1,6 +1,10 @@
 Test technique O'clock - Alexandre Mouillard
 ============================================
 
+[https://test-oclock.mouillard.fr](https://test-oclock.mouillard.fr)
+
+![Screenshot application](public/img/screenshot.png?raw=true)
+
 Usage
 -----
 + Serveur PHP 
@@ -9,7 +13,7 @@ Le projet peut être lancé avec une installation PHP 7.4+ avec la commande
 ```sh
 php -S localhost:3000
 ```
-_(paquets requis : php-sqlite3, php-pdo, php-pdo_sqlite)._
+_(paquets requis : php-sqlite3, php-pdo)._
 
 Un fichier style.css précompilé est inclus, mais en cas de modification il faudra utiliser node-sass
 pour compiler le fichier .scss avec la commande suivante.
