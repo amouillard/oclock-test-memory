@@ -29,6 +29,8 @@ class Router
         }
     }
 
+    //On pourrait aussi ajouter les fonctions PUT et DELETE...
+
     public function redirect($location)
     {
         header("Location: {$location}");
