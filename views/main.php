@@ -15,7 +15,8 @@
     </head>
     <body>
         <header>
-            <h1>Jeu de mémoire</h1>
+            <!-- Modif avec un lien dans le titre -->
+            <h1><a href="https://media.giphy.com/media/e7QixfgAH8bXY7sy67/giphy.gif">Jeu de mémoire</a></h1>
         </header>
 
         <main id="board">
