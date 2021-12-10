@@ -1,4 +1,4 @@
-Test technique O'clock - Alexandre Mouillard
+Test technique O'clock - Ribault Adrien
 ============================================
 
 ![Screenshot application](public/img/screenshot.png?raw=true)
