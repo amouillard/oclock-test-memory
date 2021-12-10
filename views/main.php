@@ -16,6 +16,9 @@
     <body>
         <header>
             <h1>Jeu de mémoire</h1>
+            <h2>La mousse et la pisse Tache !</h2>
+
+           
         </header>
 
         <main id="board">
