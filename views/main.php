@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-            <h1>Jeu de mémoire</h1>
+            <h1>Rush B Blyat</h1>
         </header>
 
         <main id="board">
