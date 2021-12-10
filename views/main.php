@@ -34,7 +34,7 @@
                  class="dialog-box"
                  style="display: none;">
                 <h2>Jeu de mémoire</h2>
-                <p>Bienvenue !</p>
+                <p>Bienvenue SUR LE SITE DE EDEN SAHILE :) :)!</p>
                 <p>Le but du jeu est de trouver toutes les paires dans le temps imparti. Connaissez-vous tous ces langages de programmation ? :)</p>
 <?php
                 if(count($scores)) {
